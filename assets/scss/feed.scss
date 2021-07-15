@@ -1,0 +1,127 @@
+$gray : #acacac;
+$green: #3ac183;
+$yellow : #f7bf38;
+$red: #fb6450;
+$blue: #67b1f2;
+$orange: orange;
+
+$mobileBreakpoint: 767px;
+$tabletBreakpoint: 1024px;
+
+
+
+div[role = main] {
+    margin: 0 0 0 300px;
+    background-color: #f5f7f8;
+    padding-bottom: 30px;
+
+    @media (max-width : $mobileBreakpoint) {
+        margin: 0;
+    }
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+    @media (max-width : $mobileBreakpoint) {
+        justify-content: center;
+        padding: 0px;
+    }
+}
+
+.thumbnail {
+    margin-right: 50px;
+    margin-top: 10px;
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%; 
+        object-fit: cover;
+    }
+
+    @media (max-width: $mobileBreakpoint) {
+        display: none;
+    }
+}
+
+.statusBar {
+    ul {
+        list-style-type: none;
+        display: flex;
+        @media (max-width: $mobileBreakpoint) {
+            flex-wrap: wrap;
+        }
+    }
+    li {
+        margin-right: 20px;
+        font-size: 14px;
+        color: rgb(105, 104, 104);
+        @media (max-width: $mobileBreakpoint) {
+            margin-top: 5px;
+        }
+        span {
+            margin-right: 8px;
+        }
+    }
+}
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.gray {
+    background-color: $gray;
+}
+
+.green {
+    background-color: $green;
+}
+.yellow {
+    background-color: $yellow
+}
+.red {
+    background-color: $red
+}
+.blue {
+    background-color: $blue;
+}
+
+.orange {
+    background-color: $orange;
+}
+
+.mainSection {
+    padding-left: 50px;
+
+    @media (max-width : $mobileBreakpoint) {
+        padding: 20px;
+        display: inline-block;
+    }
+}
+
+.feedSection {
+    .date {
+        font-size: 30px;
+        color: #b4b4b5;
+        margin-top: 20px;
+
+        @media (max-width : $mobileBreakpoint) {
+            padding-left: 8px;
+        }
+    }
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    @media (max-width : $tabletBreakpoint) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    
+}

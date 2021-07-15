@@ -1,0 +1,87 @@
+.card {
+    position: relative;
+    border: 1px solid #f0f0f5;
+    border-radius: 5px;
+    margin-right: 20px;
+    background-color: #fff;
+    color: #aeaeae;
+    font-family: 'AvenirNextLTPro-Demi';
+    min-width: 392px;
+    margin-top: 20px;
+
+    @media (max-width : $tabletBreakpoint) {
+       margin-bottom: 20px;
+       min-width: auto;
+       margin-top: 20px;
+    }
+    .status {
+        position: absolute;
+        border:1px solid #f0f0f5;
+        border-right: none;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        left: 0;
+        height: 100%;
+        display: flex;
+        max-width: 36px;
+        align-items: center;
+        justify-content: center;
+
+        i {
+            padding: 10px;
+            font-size: 25px;
+            color: white;
+        }
+    }
+
+    .cardHeader {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .cardDate {
+            margin-top: 10px;
+            font-size: 15px;
+        }
+        .actions {
+            i {
+                margin-right: 5px;
+            }
+        }
+    }
+    
+    .cardBody {
+        margin-left: 50px;
+        padding: 10px;
+    }
+    .description {
+        margin-top: 20px;
+        white-space: pre-line;
+        margin-bottom: 10px;
+        color: #999999;
+
+        a {
+            text-decoration: none;
+            color: rgb(100, 176, 201);
+        }
+    }
+
+    .card-thumbnail {
+        img {
+            width: 100%;
+            max-width: 320px;
+            height: auto;
+        }
+    }
+
+    .statistics {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        i {
+            margin-right: 10px;
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
