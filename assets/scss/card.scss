@@ -14,6 +14,13 @@
        min-width: auto;
        margin-top: 20px;
     }
+
+    @media (max-width : $mobileBreakpoint) {
+        margin-bottom: 20px;
+        min-width: auto;
+        margin-top: 20px;
+        z-index: 1;
+     }
     .status {
         position: absolute;
         border:1px solid #f0f0f5;
@@ -26,6 +33,10 @@
         max-width: 36px;
         align-items: center;
         justify-content: center;
+
+        @media (max-width : $mobileBreakpoint) {
+            z-index: 1;
+         }
 
         i {
             padding: 10px;
