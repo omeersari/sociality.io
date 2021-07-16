@@ -86,6 +86,10 @@ body {
             filter: brightness(100%);
         }
     }
+
+    .brand-icon:hover {
+        cursor: pointer;
+    }
     .brand-not {
         position: absolute;
         top: 0;
