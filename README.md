@@ -1,5 +1,15 @@
 # sociality.io
 
+Notes about the project
+
+- Nuxt.js is used for the project.
+- For styling SASS is used.
+- Store and router are used.
+- User can click each brand, also right accordion menu is clickable.
+- Responsive design is applied.
+
+Build steps are explained below.
+
 ## Build Setup
 
 ```bash
